@@ -1,4 +1,4 @@
-.clearfix:after,
+bower .clearfix:after,
 .clearfix:before {
   content: "";
   display: table;
@@ -134,6 +134,11 @@ ul {
     font-size: 16px;
     color: #333333;
   }
+  &_slider {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: left;
+  }
 }
 
 .about-us {
@@ -208,6 +213,17 @@ ul {
     left: 0;
     width: 100%;
   }
+  &__txt {
+    font-family: roboto-light, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  &__more {
+    font-family: roboto-black, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }
 
 .portfolio-list {
@@ -267,4 +283,67 @@ ul {
     font-size: 14px;
     color: #333333;
   }
+}
+
+.price {
+  &__list {
+    padding: 100px;
+  }
+}
+
+.price-item {
+  width: 270px;
+  margin: 0 auto;
+  border: 3px solid #f0f0f2;
+  height: 580px;
+  &_mod {
+    position: relative;
+    top: -20px;
+    height: 615px;
+  }
+  &__head {
+    background-color: #f0f0f2;
+    text-align: center;
+    font-size: 24px;
+    color: #3b3b3b;
+    padding: 15px 0;
+    font-family: roboto-light, sans-serif;
+  }
+  &__value {
+    padding: 30px 45px;
+  }
+  &__span {
+    font-family: 'oswald-bold', sans-serif;
+    font-size: 53px;
+    color: #3b3b3b;
+    display: block;
+    position: relative;
+  }
+  &__span-upper {
+    font-family: 'oswald-regual', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 9px;
+  }
+  &__span-under {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    color: #50cbbe;
+  }
+  &__txt {
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+  }
+}
+
+.line {
+  width: 66px;
+  height: 2px;
+  background-color: #50cbbe;
+  margin: 20px 0;
+}
+.footer{
+  height: 530px;
 }
