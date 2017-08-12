@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'roboto-black', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   color: #000;
   background-color: #fff;
@@ -23,6 +23,10 @@ ul {
 }
 
 .header-topper {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
   &__box {
     font-size: 0;
     display: flex;
@@ -92,6 +96,94 @@ ul {
     color: #fff;
     text-transform: uppercase;
     background: #34c9e3;
-    background: linear-gradient(top, #34c9e3 0%, #5cccae 100%);
+    background: linear-gradient(0deg, #34c9e3 0%, #5cccae 100%);
+    padding: 20px 16px;
   }
+}
+
+.header-home {
+  padding-top: 83px;
+  background-image: url("./../img/home-bg.png");
+  background-size: cover;
+  height: 660px;
+  &__box {
+    text-align: center;
+  }
+}
+
+.title {
+  font-family: 'roboto-black', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  &_big {
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+  }
+  &_price {
+    font-size: 48px;
+  }
+  &_h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  &_subtitle {
+    font-size: 16px;
+    color: #333333;
+  }
+}
+
+.about-us {
+  padding: 50px 0;
+  background-color: #f0f0f2;
+  &__item {
+    text-align: center;
+  }
+  &__icon {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d5;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__txt {
+    font-family: 'roboto-black', sans-serif;
+    font-size: 16px;
+    color: #3b3b3b;
+    width: 165px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+}
+
+.icon-microscope {
+  background-image: url('./../img/icon-microscope.png');
+  height: 69px;
+  width: 50px;
+}
+
+.icon-graph {
+  background-image: url('./../img/icon-graph.png');
+  height: 69px;
+  width: 50px;
+}
+
+.icon-key {
+  background-image: url('./../img/icon-key.png');
+  height: 69px;
+  width: 50px;
+}
+
+.icon-gear {
+  background-image: url('./../img/icon-gear.png');
+  height: 69px;
+  width: 50px;
 }
