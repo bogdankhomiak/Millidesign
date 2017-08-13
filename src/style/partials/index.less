@@ -5,6 +5,14 @@
   clear: both;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -18,27 +26,27 @@ ul {
   padding: 0;
 }
 
-
 .header-topper {
   position: fixed;
   width: 100%;
   background-color: #fff;
   z-index: 999;
+  height: 70px;
   &__box {
     font-size: 0;
-    display: flex;
-    align-items: center;
   }
 }
 
 .logo {
   font-family: 'oswald-regual', sans-serif;
   color: #3b3b3b;
-  padding: 16px 0;
+  padding: 8px 0 15px;
+  margin-left: 30px;
   display: inline-block;
   &__name {
     display: block;
-    font-size: 26px;
+    font-size: 25px;
+    letter-spacing: 1px;
   }
   &__span {
     color: #50cbbe;
@@ -47,16 +55,40 @@ ul {
     display: block;
     font-family: Roboto, sans-serif;
     font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.1px;
+
   }
 }
 
 .header-menu {
   display: inline-block;
+  vertical-align: top;
+}
+
+.header-topper__btn {
+  display: inline-block;
+  width: 232px;
+  vertical-align: top;
+  margin-left: 15px;
+  margin-top: 11px;
+
+}
+
+.header-menu {
+  margin-left: 33px;
 }
 
 .menu {
   &__item {
     display: inline-block;
+    &:first-child .menu__link {
+      padding: 21px 5px 24px;
+      position: relative;
+      left: -6px;
+      font-size: 18px;
+      color: #50cbbe;
+    }
   }
   &__link {
     display: block;
@@ -64,21 +96,27 @@ ul {
     font-size: 12px;
     text-transform: uppercase;
     color: #3b3b3b;
-    padding: 33px 20px;
+    padding: 27px 21px 26px;
   }
 }
 
 .header-contacts {
   display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
   &__item {
     font-family: 'roboto-black', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #3b3b3b;
     display: inline-block;
+    margin: 26px 0 27px;
   }
   &__telephone, &__time {
     color: #3b3b3b;
-    padding: 33px 10px;
+    font-size: 13px;
+    margin-left: 13px;
+    letter-spacing: -.5px;
+    margin-right: 10px;
   }
 }
 
@@ -91,17 +129,23 @@ ul {
     text-transform: uppercase;
     background: #34c9e3;
     background: linear-gradient(0deg, #34c9e3 0%, #5cccae 100%);
-    padding: 20px 16px;
+    padding: 16px 16px 12px;
+    letter-spacing: -0.1px;
   }
 }
 
 .header-home {
-  padding-top: 83px;
+  padding-top: 70px;
   background-image: url("./../img/home-bg.png");
   background-size: cover;
-  height: 660px;
+  height: 730px;
   &__box {
     text-align: center;
+    padding-top: 158px;
+  }
+  &__btn {
+    width: 182px;
+    margin: 32px auto 0;
   }
 }
 
@@ -111,33 +155,53 @@ ul {
   color: #ffffff;
   display: block;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
   &_big {
     font-family: Roboto, sans-serif;
     font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    margin-top: 2px;
   }
   &_price {
     font-size: 48px;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 4px 19px 7px;
+    letter-spacing: .2px;
+    margin-top: 19px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
   &_h2 {
     font-family: Roboto, sans-serif;
-    font-size: 32px;
+    font-size: 31px;
     color: #333333;
     text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.55px;
   }
   &_subtitle {
-    font-size: 16px;
-    color: #333333;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.55px;
+    color: #333;
+    text-transform: none;
   }
   &_slider {
     font-size: 40px;
     text-transform: uppercase;
     text-align: left;
+    line-height: 48px;
   }
 }
 
 .about-us {
-  padding: 50px 0;
+  padding: 61px 0 32px;
   background-color: #f0f0f2;
+  &__list {
+    margin-top: 75px;
+  }
   &__item {
     text-align: center;
   }
@@ -155,18 +219,23 @@ ul {
   &__txt {
     font-family: 'roboto-black', sans-serif;
     font-size: 16px;
+    line-height: 22px;
     color: #3b3b3b;
     width: 165px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 33px 0;
   }
 
 }
 
+.slider {
+  position: relative;
+}
+
 .slider-item {
   position: relative;
-  &__left {
-    text-align: center;
+  &__right {
+    margin-top: 108px;
   }
   &__img {
     width: 100%;
@@ -181,16 +250,51 @@ ul {
     font-family: roboto-light, sans-serif;
     color: #ffffff;
     font-size: 20px;
+    margin-top: 25px;
+    padding-right: 130px;
   }
   &__more {
     font-family: roboto-black, sans-serif;
     color: #ffffff;
     font-size: 18px;
     text-transform: uppercase;
+    margin-top: 26px;
+    display: block;
   }
 }
 
+.slider-btns {
+  position: absolute;
+  top: 44%;
+  z-index: 1;
+  width: 100%;
+  &__left, &__right {
+    font-size: 35px;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 56%;
+    text-align: center;
+  }
+  &__left {
+    float: left;
+    margin-left: 30px;
+  }
+  &__right {
+    float: right;
+    margin-right: 30px;
+  }
+}
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 57px;
+
+}
+
 .portfolio-list {
+  margin-top: 118px;
   &__img {
     width: 100%;
     transition: .5s;
@@ -250,6 +354,7 @@ ul {
 }
 
 .price {
+  padding-top: 60px;
   &__list {
     padding: 100px;
   }
@@ -312,6 +417,8 @@ ul {
 .contacts {
   height: 530px;
   background-image: url('./../img/map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   &__order {
     background-color: #fff;
     border: 2px solid #f0f0f2;

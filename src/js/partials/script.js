@@ -2,15 +2,15 @@
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
-        nav: true,
+        nav: false,
         items: 1
     });
-    var t = $(".owl-carousel");
-    t.owlCarousel(),
-        $(".next").click(function () {
-            t.trigger("next.owl.carousel")
-        }),
-        $(".prev").click(function () {
-            t.trigger("prev.owl.carousel")
-        })
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+    $('.slider-btns__right').click(function () {
+        owl.trigger('next.owl.carousel');
+    });
+    $('.slider-btns__left').click(function () {
+        owl.trigger('prev.owl.carousel');
+    });
 });
