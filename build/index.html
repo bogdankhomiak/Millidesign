@@ -7,71 +7,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,itial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 <header class="header">
-    <div class="header-topper">
-        <div class="container">
-            <div class="row">
-                <div class="header-topper__box">
-                    <div class="header-logo logo">
-                        <h1 class="logo__name"><span class="logo__span">MILLI</span>DESIGN</h1>
-                        <span class="logo__txt">РАЗРАБОТКА ЛЕНДИНГОВ</span>
-                    </div>
-                    <div class="header-menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link"><i class="fa fa-home" aria-hidden="true"></i></a>
-                            </li>
-                            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="header-contacts">
-                        <ul class="header-contact__list">
-                            <li class="header-contacts__item"><i class="fa fa-phone" aria-hidden="true"></i>
-                                <a href="tel:+74956486801" class="header-contacts__telephone">+7(495) 648-68-01</a>
-                            </li>
-                            <li class="header-contacts__item"><i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <span class="header-contacts__time">10:00 -18:00 ПН - ПТ</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header-topper__btn btn">
-                        <a href="#" class="btn__link">закзать обратный звонок</a>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="header__box">
+                <div class="header__logo logo">
+                    <h1 class="logo__name"><span class="logo__span">MILLI</span>DESIGN</h1>
+                    <span class="logo__txt">РАЗРАБОТКА ЛЕНДИНГОВ</span>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-home">
-        <div class="container">
-            <div class="row">
-                <div class="header-home__box">
-                    <h2 class="title">Разработаем продающий вебсайт</h2>
-                    <h3 class="title title_big">поднимем Ваш бизнес на новые высоты</h3>
-                    <span class="title title_price">От 29 000
-                        <i class="fa fa-rub" aria-hidden="true"></i>
-                        под ключ</span>
-                    <div class="header-home__btn btn">
-                        <a href="#" class="btn__link">отправить заявку</a>
-                    </div>
+                <nav class="header-nav ">
+                    <ul class="header-nav__items">
+                        <li class="header-nav__item">
+                            <a href="#" class="header-nav__link"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#about-us" class="header-nav__link">О нас</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#portfolio" class="header-nav__link">Портфолио</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#price" class="header-nav__link">Цены</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#contacts" class="header-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-contacts">
+                    <ul class="header-contact__items">
+                        <li class="header-contacts__item"><i class="fa fa-phone" aria-hidden="true"></i><a
+                                href="tel:+74956486801" class="header-contacts__telephone">+7(495) 648-68-01</a>
+                        </li>
+                        <li class="header-contacts__item"><i class="fa fa-clock-o" aria-hidden="true"></i><span
+                                class="header-contacts__time">10:00 -18:00 ПН - ПТ</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__btn">
+                    <a href="#" class="btn btn--primary">закзать обратный звонок</a>
                 </div>
             </div>
         </div>
     </div>
 </header>
+<div class="home">
+    <div class="container">
+        <div class="row">
+            <div class="home__box">
+                <h2 class="title">Разработаем продающий вебсайт</h2>
+                <h3 class="title title_big">поднимем Ваш бизнес на новые высоты</h3>
+                <span class="title title_price">От 29 000
+                        <i class="fa fa-rub" aria-hidden="true"></i>
+                        под ключ</span>
+                <div class="home__btn">
+                    <a href="#" class="btn btn--primary">отправить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section class="about-us" id="about-us">
     <div class="container">
         <div class="row">
             <div class="about-us__box">
                 <h2 class="title title_h2">Почему стоит выбрать нас</h2>
-                <div class="about-us__list">
+                <div class="about-us__items">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -114,7 +120,7 @@
     </div>
 </section>
 <section class="slider">
-    <div class="slider-list owl-carousel">
+    <div class="slider__items owl-carousel">
         <div class="slider-item">
             <img src="img/slide-bg-1.png" alt="slid" class="slider-item__img">
             <div class="slider-item__box">
@@ -146,7 +152,7 @@
                             <div class="slider-item__right">
                                 <div class="slider-item__descr">
                                     <h2 class="title title_slider">
-                                        Разработка адаптивного дизайна
+                                        Осуществляем <br> поддержку проектов
                                     </h2>
                                     <p class="slider-item__txt">Дополнительная информация о разроботке, сроки и
                                         объяснение механики.</p>
@@ -168,7 +174,7 @@
                             <div class="slider-item__right">
                                 <div class="slider-item__descr">
                                     <h2 class="title title_slider">
-                                        Разработка адаптивного дизайна
+                                        Логотип в подарок <br> при заказе лендинга
                                     </h2>
                                     <p class="slider-item__txt">Дополнительная информация о разроботке, сроки и
                                         объяснение механики.</p>
@@ -189,17 +195,17 @@
 
 </section>
 <section class="portfolio" id="portfolio">
-    <div class="portfolio-head">
+    <div class="portfolio__head">
         <h2 class="title title_h2">Наше портфолио</h2>
         <p class="title title_subtitle">За 3 года работы мы создали более 200 вебсайтов, вот лишь некоторые из них</p>
     </div>
-    <div class="portfolio-list">
+    <div class="portfolio__items">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-1.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-1.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -216,8 +222,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-2.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-2.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -234,8 +240,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-3.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-3.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -252,8 +258,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-4.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-4.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -270,8 +276,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-5.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-5.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -288,8 +294,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-6.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-6.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -306,8 +312,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-7.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-7.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -324,8 +330,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <div class="portfolio-list__item">
-                            <img src="img/portfolio-8.png" alt="portfolio" class="portfolio-list__img">
+                        <div class="portfolio__item">
+                            <img src="img/portfolio-8.png" alt="portfolio" class="portfolio__img">
                             <a href="#" class="portfolio-content">
                                 <div class="portfolio-content__top">
                                     <div class="portfolio-content__icon">
@@ -345,26 +351,26 @@
     </div>
 </section>
 <section class="price" id="price">
-    <div class="price-head">
+    <div class="price__head">
         <h2 class="title title_h2">Цены</h2>
         <p class="title title_subtitle">Выберите одну из предложенных опций или отправте заявку на индивидуальный
             проект</p>
     </div>
-    <div class="price__list">
+    <div class="price__items">
         <div class="container">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="price-item">
                     <div class="price-item__head">Promo</div>
                     <div class="price-item__value">
-                            <span class="price-item__span">29
-                                <span class="price-item__span-upper">000 <i class="fa fa-rub" aria-hidden="true"></i>
+                            <span class="price-item__cost">29
+                                <span class="price-item__cost-upper">000 <i class="fa fa-rub" aria-hidden="true"></i>
                                 </span>
-                            <span class="price-item__span-under">БЕЗ ПРЕДОПЛАТЫ</span></span>
+                            <span class="price-item__cost-under">БЕЗ ПРЕДОПЛАТЫ</span></span>
                         <div class="line"></div>
                         <p class="price-item__txt">БАЗОВЫЙ ЛЕНДИНГ</p>
                         <p class="price-item__txt">РАЗРАБОТКА ЛОГОТИПА</p>
                         <p class="price-item__txt">НАСТРОЙКА ВЕБСАЙТА</p>
-                        <div class="price-item__btn btn"><a href="#" class="btn__link">Отправить заявку</a></div>
+                        <div class="price-item__btn"><a href="#" class="btn btn--second">Отправить заявку</a></div>
                     </div>
                 </div>
             </div>
@@ -372,16 +378,16 @@
                 <div class="price-item price-item_mod">
                     <div class="price-item__head">Premium+</div>
                     <div class="price-item__value">
-                            <span class="price-item__span">49
-                                <span class="price-item__span-upper">000 <i class="fa fa-rub" aria-hidden="true"></i>
+                            <span class="price-item__cost">49
+                                <span class="price-item__cost-upper">000 <i class="fa fa-rub" aria-hidden="true"></i>
                                 </span>
-                            <span class="price-item__span-under">10% СКИДКА</span></span>
+                            <span class="price-item__cost-under">10% СКИДКА</span></span>
                         <div class="line"></div>
                         <p class="price-item__txt">УНИКАЛЬНЫЙ ДИЗАЙН</p>
                         <p class="price-item__txt">АВТОРСКИЙ ЛОГОТИПА</p>
                         <p class="price-item__txt">ЛИЧНЫЙ МЕНЕДЖЕР</p>
                         <p class="price-item__txt">НАСТРОЙКА И ПОДДЕРЖКА ПРОЕКТА</p>
-                        <div class="price-item__btn btn"><a href="#" class="btn__link">Отправить заявку</a></div>
+                        <div class="price-item__btn"><a href="#" class="btn btn--primary">Отправить заявку</a></div>
                     </div>
                 </div>
             </div>
@@ -389,16 +395,16 @@
                 <div class="price-item">
                     <div class="price-item__head">Бизнес+</div>
                     <div class="price-item__value">
-                            <span class="price-item__span">149
-                                <span class="price-item__span-upper">000 <i class="fa fa-rub" aria-hidden="true"></i>
+                            <span class="price-item__cost">149
+                                <span class="price-item__cost-upper">000 <i class="fa fa-rub" aria-hidden="true"></i>
                                 </span>
-                            <span class="price-item__span-under">10% СКИДКА</span></span>
+                            <span class="price-item__cost-under">10% СКИДКА</span></span>
                         <div class="line"></div>
                         <p class="price-item__txt">ИНТЕРНЕТ МАГАЗИН</p>
                         <p class="price-item__txt">МНОГОСТРАНИЧНЫЙ ВЕБСАЙТА</p>
                         <p class="price-item__txt">КОРПОРАТИВНЫЙ ПОРТАЛ</p>
                         <p class="price-item__txt">ВЕБ ПРИЛОЖЕНИЕ</p>
-                        <div class="price-item__btn btn"><a href="#" class="btn__link">Отправить заявку</a></div>
+                        <div class="price-item__btn"><a href="#" class="btn btn--second">Отправить заявку</a></div>
                     </div>
                 </div>
             </div>
@@ -410,7 +416,7 @@
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="contacts__order">
                 <h2 class="title title_h2">Оформить заказ</h2>
-                <form action="#" class="footer__form">
+                <form action="#" class="contacts__form">
                     <input type="text" placeholder="ФИО">
                     <input type="email" placeholder="Адрес эл. почты">
                     <input type="tel" placeholder="Телефон">
@@ -423,11 +429,11 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="footer-logo logo">
+            <div class="footer__logo logo">
                 <h1 class="logo__name"><span class="logo__span">MILLI</span>DESIGN</h1>
                 <span class="logo__txt">РАЗРАБОТКА ЛЕНДИНГОВ</span>
             </div>
-            <div class="footer-copyright">
+            <div class="footer__copyright">
                 &copy; 2015 - MILLIDESIGN. Все права защищены
             </div>
         </div>

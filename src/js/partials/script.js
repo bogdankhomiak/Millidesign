@@ -14,3 +14,40 @@ $(document).ready(function () {
         owl.trigger('prev.owl.carousel');
     });
 });
+$(document).ready(function () {
+    var t, e = $(".header-nav"),
+        n = e.outerHeight(),
+        i = e.find(".header-nav__link"),
+        o = i.map(function () {
+            var t = $($(this).attr("href"));
+            if (t.length)
+                return t
+        });
+    i.click(function (t) {
+        if ($(window).width() > 768) {
+            var e = $(this).attr("href")
+                , i = "#" === e ? 0 : $(e).offset().top - n + 1;
+            $("html, body").stop().animate({
+                scrollTop: i
+            }, 500),
+                t.preventDefault()
+        } else {
+            var e = $(this).attr("href")
+                , i = "#" === e ? 0 : $(e).offset().top;
+            $("html, body").stop().animate({
+                scrollTop: i
+            }, 500),
+                t.preventDefault()
+        }
+    }),
+        $(window).scroll(function () {
+            var e = $(this).scrollTop() + n
+                , r = o.map(function () {
+                if ($(this).offset().top < e)
+                    return this
+            });
+            r = r[r.length - 1];
+            var s = r && r.length ? r[0].id : "";
+            t !== s && (t = s, i.parent().removeClass("header-nav__item_active").end().filter("[href='#" + s + "']").parent().addClass("header-nav__item_active"))
+        })
+});
