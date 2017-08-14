@@ -14,22 +14,27 @@ $(document).ready(function () {
         owl.trigger('prev.owl.carousel');
     });
 
+
     $(".header-nav-btn").click(function () {
-        $(".header-nav").toggleClass("on");
-    });
-    $(".header-nav-btn").click(function () {
-        //$(".sandwich").toggleClass("active");
         if ($(".header-nav").is(":visible")) {
             $(".header-nav").fadeOut(400);
         } else {
             $(".header-nav").fadeIn(400);
         }
     });
+    function res() {
+        if ($(window).width() <= 700) {
+            $(".header-nav__link").click(function () {
+                $(".header-nav").fadeOut(400);
+            });
+        }
+    }
 
-    $(".header-nav__link").click(function () {
-        $(".header-nav").fadeOut(400);
-        //$(".sandwich").toggleClass("active");
-    })
+    res();
+    $(window).resize(function () {
+        res();
+    });
+
 
     var t, e = $(".header-nav"),
         n = e.outerHeight(),

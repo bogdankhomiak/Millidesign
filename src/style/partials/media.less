@@ -97,6 +97,7 @@
   }
 
   .header-nav {
+    display: none;
     margin: 0;
     &__items {
       background-color: #fff;
@@ -134,31 +135,24 @@
     display: none;
   }
 
-  .header-nav {
-    display: none;
+  .title {
+    &_slider {
+      font-size: 10px;
+      line-height: 13px;
+    }
   }
 
-  .on {
-    display: block;
-    z-index: 1;
-  }
-
-  .title_slider {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  .slider-item__right {
-    margin-top: 10px;
-  }
-
-  .slider-item__txt {
-    margin-top: 5px;
-    font-size: 9px;
+  .slider-item {
+    &__right {
+      margin-top: 10px;
+    }
+    &__txt {
+      margin-top: 5px;
+      font-size: 9px;
+    }
   }
 
   .slider-btns {
     display: none;
   }
-
 }
