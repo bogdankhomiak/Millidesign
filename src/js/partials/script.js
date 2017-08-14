@@ -23,7 +23,7 @@ $(document).ready(function () {
         }
     });
     function res() {
-        if ($(window).width() <= 700) {
+        if ($(window).width() <= 767) {
             $(".header-nav__link").click(function () {
                 $(".header-nav").fadeOut(400);
             });
